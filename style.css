@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*medida a partir da borda*/
+}
+
+:root{
+    --text-color: white;
+    --bg-url: url(/assets/fd67de43ef782a7d2de29ca0576ee9c1.jpg);
+    --stroke-color: rgba(255,255,255, 0.5);
+    --surface-color: rgba(255,255,255, 0.05);
+    --surface-color-hover: rgba(0,0,0, 0.02);
+    --highlight-color: rgba(255,255,255,0.2);
+    --switch-bg: white;
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url(/assets/depositphotos_64138213-stock-photo-white-gray-gradient-background.jpg);
+    --stroke-color: rgba(0,0,0, 0.5);
+    --surface-color: rgba(0,0,0, 0.05);
+    --surface-color-hover: rgba(0,0,0, 0.02);
+    --highlight-color: rgba(0,0,0,0.1);
+    --switch-bg: black;
+}
+
+body{
+    background-image: var(--bg-url); 
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; /*Cobre todo o espaço visível*/
+}
+
+body * {
+    font-family: 'Inter', sans-serif;    color: #ffffff;
+    color: var(--text-color);
+}
+
+#container {
+    width: 360px;
+    max-width: 588px;
+    margin: 20px auto 0px;   
+    padding: 0 24px;
+}
+
+/* PROFILE */
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+    display: block;
+    width: 112px;
+    margin: auto; /*Alinhar ao centro*/
+}
+
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* SWITCH */
+
+#switch{
+    position: relative;
+    width: 64px;
+
+    margin: 4px auto;
+}
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background: var(--switch-bg);
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute; /*Absoluto relativo ao switch*/
+    top: 50%;
+    left: 0;
+    z-index: 1; /*em camadas*/
+    transform: translateY(-50%);
+}
+
+.light #switch button{
+    right: 0;
+    left: initial;
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+/*LINKS - Listas*/
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+
+    text-decoration: nome;
+    font-weight: 500;
+
+    transition: all 0.5s;
+}
+
+ul li a:hover{
+    background: var(--surface-color-hover) ;
+    border: 1.5px solid var(--text-color);
+}
+
+/*social-links*/
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+}
+
+#social-links a:hover{
+    background: var(--highlight-color);
+    border-radius: 50%;
+}
+
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
