@@ -6,7 +6,7 @@
 
 :root{
     --text-color: white;
-    --bg-url: url(/assets/fd67de43ef782a7d2de29ca0576ee9c1.jpg);
+    --bg-url: url(./assets/fd67de43ef782a7d2de29ca0576ee9c1.jpg);
     --stroke-color: rgba(255,255,255, 0.5);
     --surface-color: rgba(255,255,255, 0.05);
     --surface-color-hover: rgba(0,0,0, 0.02);
@@ -16,7 +16,7 @@
 
 .light{
     --text-color: black;
-    --bg-url: url(/assets/depositphotos_64138213-stock-photo-white-gray-gradient-background.jpg);
+    --bg-url: url(./assets/depositphotos_64138213-stock-photo-white-gray-gradient-background.jpg);
     --stroke-color: rgba(0,0,0, 0.5);
     --surface-color: rgba(0,0,0, 0.05);
     --surface-color-hover: rgba(0,0,0, 0.02);

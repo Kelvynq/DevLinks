@@ -15,8 +15,8 @@ const img = document.querySelector("#profile img")
 // SUBSTITUIR A IMAGEM
 
 if(html.classList.contains("light")){
-    img.setAttribute("scr", "/assets/6073873.png")
+    img.setAttribute("scr", "./assets/6073873.png")
 }else{
-    img.setAttribute("src", "/assets/Profile-Avatar-PNG.png")
+    img.setAttribute("src", "./assets/Profile-Avatar-PNG.png")
 }
 }
